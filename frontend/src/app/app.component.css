@@ -1,0 +1,64 @@
+.bg {
+  background-image: url(../assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 470px;
+}
+a {
+  text-decoration: none;
+}
+.admin {
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.login {
+  padding: 10px 25px;
+  background: #0093fe;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.carro_novo {
+  padding: 15px 35px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.carro_seminovo {
+  padding: 15px 35px;
+  background: #0093fe;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.contato {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+nav {
+  background: #060608;
+}
+@media (max-width: 1300px) {
+  nav {
+    background: #0093fe;
+    color: #ffffff;
+  }
+}
+.listagem {
+  margin-top: 3rem;
+}

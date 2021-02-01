@@ -1,0 +1,15 @@
+<div class="align-items-center d-flex heroes justify-content-start row">
+  <div class="col-md-3" *ngFor="let hero of heroes$ | async" [class.selected]="hero.id === selectedId">
+
+    <a [routerLink]="['/hero', hero.id]">
+      <div class="card mb-3 shadow-sm border-0">
+        <div class="card-body">
+          <span class="">{{ hero.id }}</span>
+          <h5 class="card-title">{{ hero.name }}</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+

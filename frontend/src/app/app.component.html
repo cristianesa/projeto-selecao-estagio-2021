@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mt-2 mb-2">
+      <li class="nav-item active">
+        <a class="mr-2 admin" routerLink="/admin" routerLinkActive="active">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="login" routerLink="/login" routerLinkActive="active">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section class="bg">
+  <div class="container">
+    <div class="row d-flex justify-content-center justify-content-md-start">
+      <div class="col-12 col-md-auto text-left mt-5">
+        <a class="carro_novo" routerLink="/crisis-center" routerLinkActive="active">Carros novos</a>
+      </div>
+      <div class="col-12 col-md-auto text-left mt-5">
+        <a class="carro_seminovo" routerLink="/superheroes" routerLinkActive="active">Carros Seminovos</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="listagem">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 text-left">
+        <div [@routeAnimation]="getAnimationData(routerOutlet)">
+          <router-outlet #routerOutlet="outlet"></router-outlet>
+        </div>
+        <router-outlet name="popup"></router-outlet>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="contato" [routerLink]="[{ outlets: { popup: ['compose'] } }]">
+  <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+      <circle cx="29" cy="25" r="25" fill="#0093FE" />
+    </g>
+    <g clip-path="url(#clip0)" filter="url(#filter1_d)">
+      <path
+        d="M41.189 25.504H39.523C39.523 20.067 35.101 15.646 29.667 15.646L29.666 13.982C36.021 13.979 41.189 19.149 41.189 25.504ZM29.666 16.856L29.665 18.52C33.518 18.52 36.648 21.653 36.646 25.503L38.312 25.502C38.312 20.735 34.436 16.856 29.666 16.856ZM29.333 9C20.326 9 13 16.326 13 25.334C13 34.34 20.326 41.666 29.333 41.666C29.89 41.666 30.34 41.216 30.34 40.66C30.34 40.101 29.89 39.65 29.333 39.65C21.437 39.65 15.015 33.226 15.015 25.334C15.015 17.438 21.437 11.015 29.333 11.015C37.229 11.015 43.65 17.439 43.65 25.334C43.65 28.633 41.894 31.902 39.381 33.288C38.468 33.79 37.478 34.039 36.422 34.049C37.056 33.672 37.605 33.162 38.013 32.52C38.093 32.399 38.199 32.292 38.251 32.161C38.579 31.372 38.608 30.477 38.806 29.643C39.049 28.579 34.148 26.5 33.722 27.829C33.568 28.321 33.332 29.877 33.023 30.287C32.748 30.653 32.07 30.479 31.646 30.119C30.529 29.167 29.282 27.768 28.188 26.662L28.19 26.661C28.162 26.632 28.128 26.6 28.098 26.569C28.067 26.54 28.036 26.507 28.005 26.477V26.479C26.899 25.383 25.499 24.139 24.548 23.02C24.188 22.596 24.014 21.918 24.38 21.643C24.79 21.332 26.346 21.1 26.838 20.944C28.164 20.52 26.088 15.616 25.022 15.86C24.19 16.055 23.295 16.087 22.506 16.413C22.372 16.47 22.268 16.573 22.147 16.653C19.348 18.427 18.987 22.735 21.719 25.945C22.76 27.173 23.846 28.361 24.964 29.521L24.958 29.525C24.989 29.556 25.021 29.585 25.053 29.615C25.083 29.646 25.112 29.677 25.141 29.71L25.147 29.704C26.307 30.822 27.682 32.469 29.916 33.959C34.619 37.1 38.228 36.223 40.354 35.057C44.024 33.036 45.666 28.719 45.666 25.338C45.666 16.326 38.339 9 29.333 9Z"
+        fill="white" />
+    </g>
+    <defs>
+      <filter id="filter0_d" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+      </filter>
+      <filter id="filter1_d" x="9" y="9" width="40.666" height="40.666" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+      </filter>
+      <clipPath id="clip0">
+        <rect width="32.666" height="32.666" fill="white" transform="translate(13 9)" />
+      </clipPath>
+    </defs>
+  </svg>
+</a>
